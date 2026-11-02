@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Progress | Smart Diet Planner</title>
+    <link rel="stylesheet" href="track.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <!-- <header class="header">
+        <h2 class="logo">Smart Diet Planner</h2>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="myplan.html">My Plan</a>
+            <a href="foodguide.html">Food Guide</a>
+            <a href="track.html" class="active">Track</a>
+        </nav>
+    </header> -->
+
+    <!-- Page Introduction -->
+    <section class="intro">
+        <h1>Track Your Daily Progress</h1>
+        <p>
+            Build healthy habits every day. Track your water intake,
+            physical activity, and healthy meals in one place.
+        </p>
+    </section>
+
+    <!-- Daily Summary -->
+    <section class="summary">
+        <div class="summary-card">
+            <div class="icon">💧</div>
+            <h3>Water Intake</h3>
+            <p class="number" id="waterSummary">4 / 8 glasses</p>
+            <div class="progress-bar">
+                <div class="water-progress" id="waterProgress"></div>
+            </div>
+            <p class="small-text" id="waterPercent">50% of daily goal</p>
+        </div>
+
+        <div class="summary-card">
+            <div class="icon">🏃</div>
+            <h3>Physical Activity</h3>
+            <p class="number" id="activitySummary">20 / 30 minutes</p>
+            <div class="progress-bar">
+                <div class="activity-progress" id="activityProgress"></div>
+            </div>
+            <p class="small-text" id="activityPercent">67% of daily goal</p>
+        </div>
+
+        <div class="summary-card">
+            <div class="icon">🥗</div>
+            <h3>Healthy Meals</h3>
+            <p class="number" id="mealSummary">2 / 3 meals</p>
+            <div class="progress-bar">
+                <div class="meal-progress" id="mealProgress"></div>
+            </div>
+            <p class="small-text" id="mealPercent">67% of daily goal</p>
+        </div>
+    </section>
+
+    <!-- Tracking Activities -->
+    <main class="tracking-section">
+
+        <!-- Water Tracking -->
+        <div class="track-card">
+            <h2>💧 Water Tracker</h2>
+            <p>Daily goal: 8 glasses of water</p>
+
+            <div class="water-count">
+                <span>🥛</span>
+                <span>🥛</span>
+                <span>🥛</span>
+                <span>🥛</span>
+                <span class="empty">🥛</span>
+                <span class="empty">🥛</span>
+                <span class="empty">🥛</span>
+                <span class="empty">🥛</span>
+            </div>
+
+            <p class="status" id="waterStatus">You have had 4 glasses today!</p>
+
+            <div class="button-group">
+                <button type="button" id="addWater">+ Add Glass</button>
+                <button type="button" class="reset-btn" id="resetWater">Reset</button>
+            </div>
+        </div>
+
+        <!-- Exercise Tracking -->
+        <div class="track-card">
+            <h2>🏃 Activity Tracker</h2>
+            <p>Daily goal: 30 minutes of activity</p>
+
+            <div class="activity-box">
+                <span class="activity-number" id="activityNumber">20</span>
+                <span>minutes completed</span>
+            </div>
+
+            <div class="button-group">
+                <button type="button" id="addActivity">+ Add 10 Minutes</button>
+                <button type="button" class="reset-btn" id="resetActivity">Reset</button>
+            </div>
+
+            <p class="status" id="activityStatus">Great job! Keep moving.</p>
+        </div>
+
+        <!-- Meal Tracking -->
+        <div class="track-card">
+            <h2>🥗 Healthy Meal Tracker</h2>
+            <p>Tick the meals you have completed today.</p>
+
+            <div class="meal-list">
+                <label>
+                    <input type="checkbox" class="meal-checkbox" checked>
+                    Breakfast
+                </label>
+
+                <label>
+                    <input type="checkbox" class="meal-checkbox" checked>
+                    Lunch
+                </label>
+
+                <label>
+                    <input type="checkbox" class="meal-checkbox">
+                    Dinner
+                </label>
+            </div>
+
+            <p class="status" id="mealStatus">You have completed 2 out of 3 meals.</p>
+        </div>
+
+    </main>
+
+    <!-- Motivational Message -->
+    <section class="motivation">
+        <h2>Small Steps, Healthier You!</h2>
+        <p>
+            Every healthy choice counts. Stay consistent and keep
+            working towards your daily goals.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Smart Diet Planner | Eat Healthy, Live Better</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

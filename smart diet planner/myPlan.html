@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myplan.css">
+    <title>My Plan</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="tittle">Create Your Diet Plan</h1>
+        <p  class="subtittle">Tell us about yourself and your goals, and we will create a personalized <br> deit plan just for you. </p>
+
+    <form action="#" class="form" id="dietForm" name="form1">
+        <div class="first">
+
+
+        <label for="">Name:</label>
+        <input type="text" id="name" name="fname" placeholder="Enter Your Name" required><br>
+        <br>
+        <label for="">Age:</label>
+        <input type="number" id="age" min="1" max="100" placeholder="Enter Your Age" required><br>
+        <br>
+        <label for="">Gender:</label>
+        <input type="radio" name="gender" value="male" required>Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+        <br>
+        </div>
+
+        <div class="second">
+
+
+        <label for="">Height (CM):</label>
+        <input type="number" id="height" min="1" max="250" placeholder="Enter Your Height in (CM)" required><br>
+
+        <label for="" >Weight (KG):</label>
+        <input type="number" id="weight" min="1" max="500" placeholder="Enter Your Weight in (KG)" required><br>
+
+        <label for="">What's your goal:</label> 
+        <select name="goal" id="goal" required>
+            <option value="">Select your goal</option>
+            <option value="gain">Weight Gain</option>
+            <option value="loss">Weight Loss</option>
+            <option value="maintain">Maintain Weight</option>
+        </select><br>
+
+        <label for="">Food Preference</label>
+        <select name="foodPreference" id="foodPreference" required>
+            <option value="">Select food preference</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="non-vegetarian">Non-Vegetarian</option>
+        </select><br>
+        <br>
+
+        </div>    
+         
+        
+    </form>
+<button type="submit" form="dietForm">Generate My Diet Plan</button>
+    <section id="planResult" class="plan-result" aria-live="polite"></section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

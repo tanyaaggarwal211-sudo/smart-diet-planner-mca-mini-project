@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Guide | Smart Diet Planner</title>
+    <link rel="stylesheet" href="foodGuide.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a class="brand" href="#">Smart<span>Diet</span></a>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">My Plan</a>
+            <a class="active" href="#">Food Guide</a>
+            <a href="#">Track</a>
+        </nav>
+    </header>
+
+    <main class="page">
+
+        <section class="intro">
+            <p class="eyebrow">EAT WELL • FEEL WELL</p>
+            <h1>Your Healthy Food Guide</h1>
+
+            <p class="intro-text">
+                Explore everyday foods, learn what they offer, and make
+                balanced choices for a healthy lifestyle.
+            </p>
+
+            <div class="search-wrap">
+                <span>⌕</span>
+                <input type="search" id="foodSearch"
+                       placeholder="Search healthy foods..."
+                       aria-label="Search healthy foods">
+            </div>
+        </section>
+
+        <section class="guide-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Explore healthy foods</h2>
+                    <p>Simple ingredients for balanced meals.</p>
+                </div>
+
+                <span class="count" id="foodCount">6 food ideas</span>
+            </div>
+
+            <div class="food-grid">
+
+                <article class="food-card">
+                    <div class="food-visual fruit">
+                        <span>🍎</span>
+                        <small>FRUIT</small>
+                    </div>
+
+                    <div class="food-info">
+                        <div class="tags">
+                            <span>Vitamins</span>
+                            <span>Fiber</span>
+                        </div>
+
+                        <h3>Apple</h3>
+                        <p>A convenient fruit that provides fiber
+                           and a naturally sweet snack.</p>
+
+                        <div class="food-tip">
+                            <strong>Try it:</strong>
+                            Add slices to breakfast or enjoy as a snack.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-visual protein">
+                        <span>🥚</span>
+                        <small>PROTEIN</small>
+                    </div>
+
+                    <div class="food-info">
+                        <div class="tags">
+                            <span>Protein</span>
+                            <span>Vitamin B12</span>
+                        </div>
+
+                        <h3>Eggs</h3>
+                        <p>Provide protein and nutrients that support
+                           normal body functions.</p>
+
+                        <div class="food-tip">
+                            <strong>Try it:</strong>
+                            Boiled eggs with whole-grain toast.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-visual grains">
+                        <span>🌾</span>
+                        <small>WHOLE GRAIN</small>
+                    </div>
+
+                    <div class="food-info">
+                        <div class="tags">
+                            <span>Fiber</span>
+                            <span>Energy</span>
+                        </div>
+
+                        <h3>Oats</h3>
+                        <p>A whole grain that supplies carbohydrates
+                           and soluble fiber.</p>
+
+                        <div class="food-tip">
+                            <strong>Try it:</strong>
+                            Make porridge with milk and fruit.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-visual dairy">
+                        <span>🥛</span>
+                        <small>DAIRY</small>
+                    </div>
+
+                    <div class="food-info">
+                        <div class="tags">
+                            <span>Calcium</span>
+                            <span>Protein</span>
+                        </div>
+
+                        <h3>Milk or curd</h3>
+                        <p>Can provide protein and calcium; choose
+                           options that suit your diet.</p>
+
+                        <div class="food-tip">
+                            <strong>Try it:</strong>
+                            Include plain curd with a meal.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-visual greens">
+                        <span>🥬</span>
+                        <small>VEGETABLE</small>
+                    </div>
+
+                    <div class="food-info">
+                        <div class="tags">
+                            <span>Fiber</span>
+                            <span>Micronutrients</span>
+                        </div>
+
+                        <h3>Leafy greens</h3>
+                        <p>Vegetables add color, fiber, and a variety
+                           of vitamins and minerals.</p>
+
+                        <div class="food-tip">
+                            <strong>Try it:</strong>
+                            Add spinach to dal, sabzi, or a wrap.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-visual legumes">
+                        <span>🫘</span>
+                        <small>PLANT PROTEIN</small>
+                    </div>
+
+                    <div class="food-info">
+                        <div class="tags">
+                            <span>Protein</span>
+                            <span>Fiber</span>
+                        </div>
+
+                        <h3>Dal and beans</h3>
+                        <p>Affordable plant foods that provide
+                           protein, fiber, and minerals.</p>
+
+                        <div class="food-tip">
+                            <strong>Try it:</strong>
+                            Pair dal with rice or roti and vegetables.
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="tip-banner">
+            <div class="tip-icon">🌿</div>
+
+            <div>
+                <h2>A simple healthy-eating tip</h2>
+                <p>
+                    Try to include vegetables or fruit, a protein source,
+                    and a grain in your meals.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Smart Diet Planner • Small choices can build healthy habits.</p>
+            <small>
+                General educational information only; individual
+                nutrition needs may differ.
+            </small>
+        </footer>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

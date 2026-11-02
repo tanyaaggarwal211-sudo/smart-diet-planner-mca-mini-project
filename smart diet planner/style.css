@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    /* padding: 0; */
+    overflow-x: hidden;
+}
+header{
+    display: inline-block;
+    height: 10%;
+    width: 100%;
+    background-color: #087F5B;
+    color: white;
+    /* position: fixed; */
+
+}
+#mainHeading{
+    display: inline-block;
+    position: relative;
+    left: 100px;
+}
+
+.links{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    right: 200px;
+    bottom: 30px;
+    gap: 100px;  
+}
+
+a{
+    text-decoration: none;
+    color: white; 
+}
+/* a:hover{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    color: rgb(38, 38, 129);
+    border: 2px solid green;
+} */
+.hero{
+    height: 40vh;
+    width: 100%;
+    background-color: #F1F8F4;
+    display: flex;
+}
+.innerhero{
+    position: relative;
+    left: 120px;
+}
+.innerhero h1{
+    font-size: 48px;
+    line-height: 1.1;
+}
+.innerhero h2 span{
+    color: green;
+}
+.innerhero button{
+    background-color: #20A36A;
+    color: white;
+    height: 50px;
+    width: 170px;
+    border: 0px solid ;
+    border-radius: 30px;
+}
+button:hover{
+    background-color: #087F5B;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.image img{
+    position: absolute;
+    right: 340px;
+    top: 110px;
+    border-radius: 15px;
+}
+.paragraph{
+    background-color: pink;
+}
+.contentparagraph h1{
+    position: relative;
+    left: 620px;
+    font-weight: 48px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 50px;
+}
+.contentparagraph h1 span{
+    color: green;
+}
+.contentparagraph p{
+    position: relative;
+    bottom: 30px;
+    left: 610px;
+    color: rgb(113, 161, 113);
+    line-height: 1;
+}
+.contentparagraph p span{
+    display: inline-block;
+}
+.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.card{
+    height: 150px;
+    width: 250px;
+    background-color: rgb(237, 242, 237);
+    text-align: center;
+    border: 1px solid rgb(237, 242, 237);
+    border-radius: 10px ;
+    /* box-shadow: 0 4px 12px rgba(0,0,0,0.2); */
+}
+.card:hover{
+    transform: scale(-5x);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.footer{
+    background-color: #087F5B;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    color: white;
+}
+
+#lowerheading{
+    position: relative;
+    left: 100px;
+
+}
+#lowerParagraph{
+    position: relative;
+    right: 100px;
+    top: 10px;
+}
